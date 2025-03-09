@@ -1,0 +1,21 @@
+[versions]
+jetbrains-annotations = "26.0.1"
+paper-api = "1.18.2-R0.1-SNAPSHOT"
+adriapi = "2.3.0"
+shadow = "8.3.6"
+plugin-yml = "0.6.0"
+minotaur = "2.+"
+hangar-publish-plugin = "0.1.2"
+run-server = "2.3.1"
+
+[libraries]
+jetbrains-annotations = { group = "org.jetbrains", name = "annotations", version.ref = "jetbrains-annotations" }
+paper-api = { group = "io.papermc.paper", name = "paper-api", version.ref = "paper-api" }
+adriapi = { group = "me.adrigamer2950", name = "AdriAPI", version.ref = "adriapi" }
+
+[plugins]
+plugin-yml = { id = "net.minecrell.plugin-yml.bukkit", version.ref = "plugin-yml" }
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow"}
+run-server = { id = "xyz.jpenilla.run-paper", version.ref = "run-server" }
+modrinth = { id = "com.modrinth.minotaur", version.ref = "minotaur" }
+hangar-publish = { id = "io.papermc.hangar-publish-plugin", version.ref = "hangar-publish-plugin" }

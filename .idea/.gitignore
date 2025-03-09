@@ -1,0 +1,11 @@
+*
+!gradle.xml
+!workspace.xml
+!vcs.xml
+!modules.xml
+!modules
+!misc.xml
+!kotlinc.xml
+!compiler.xml
+!.gitignore
+!/runConfigurations/*
