@@ -38,7 +38,7 @@ dependencies {
 
     compileOnly(libs.paper.api)
 
-    compileOnly(libs.adriapi)
+    implementation(libs.adriapi)
 
     implementation(kotlin("stdlib-jdk8"))
 }
@@ -57,7 +57,6 @@ bukkit {
     website = properties["website"] as String
     description = properties["description"] as String
     foliaSupported = true
-    depend = listOf("AdriAPI")
 }
 
 tasks.build {
@@ -70,6 +69,8 @@ tasks.jar {
 
 tasks.named<ShadowJar>("shadowJar") {
     archiveClassifier.set("")
+
+    relocate("me.adrigamer2950.adriapi.api", "me.adrigamer2950.ppt.libs.adriapi")
 }
 
 tasks.withType<JavaCompile>().configureEach {
@@ -173,9 +174,6 @@ tasks.named<RunServer>("runServer").configure {
     downloadPlugins {
         // ViaVersion
         hangar("ViaVersion", "5.2.0")
-
-        // AdriAPI
-        modrinth("adriapi", "2.3.0")
     }
 }
 
