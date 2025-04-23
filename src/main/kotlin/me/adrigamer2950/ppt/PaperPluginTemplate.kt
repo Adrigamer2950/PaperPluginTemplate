@@ -2,7 +2,6 @@ package me.adrigamer2950.ppt
 
 import me.adrigamer2950.adriapi.api.APIPlugin
 
-
 class PaperPluginTemplate : APIPlugin() {
 
     override fun onPreLoad() {
