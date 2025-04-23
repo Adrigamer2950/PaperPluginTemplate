@@ -1,5 +1,6 @@
 @file:Suppress("VulnerableLibrariesLocal")
 
+import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 import io.papermc.hangarpublishplugin.model.Platforms
 import xyz.jpenilla.runpaper.task.RunServer
 import xyz.jpenilla.runtask.task.AbstractRun
@@ -61,6 +62,14 @@ bukkit {
 
 tasks.build {
     dependsOn("shadowJar")
+}
+
+tasks.jar {
+    enabled = false
+}
+
+tasks.named<ShadowJar>("shadowJar") {
+    archiveClassifier.set("")
 }
 
 tasks.withType<JavaCompile>().configureEach {
