@@ -1,7 +1,7 @@
 [versions]
 jetbrains-annotations = "26.0.1"
 paper-api = "1.18.2-R0.1-SNAPSHOT"
-adriapi = "2.4.0"
+adriapi = "2.5.2"
 shadow = "8.3.6"
 plugin-yml = "0.6.0"
 minotaur = "2.+"
