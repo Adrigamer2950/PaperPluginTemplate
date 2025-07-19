@@ -132,7 +132,7 @@ hangarPublish {
     publications.register("plugin") {
         version.set(project.version as String)
         channel.set(properties["hangar-channel"] as String)
-        id.set(properties["modrinth-id"] as String)
+        id.set(properties["hangar-id"] as String)
         apiKey.set(System.getenv("HANGAR_API_TOKEN"))
         platforms {
             register(Platforms.PAPER) {
